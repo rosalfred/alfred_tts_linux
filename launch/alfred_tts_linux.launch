@@ -1,0 +1,25 @@
+<!-- This is a sample lanuch file, please change it based on your needs -->
+
+<launch>
+
+  <!-- SYSTEM SOUND (alsa) -->
+  <node name="system_sound" pkg="sound_play" type="soundplay_node.py"  output="screen" clear_params="true" >
+  </node>
+
+  <!-- SPEECH to TEXT -->
+  <!--node name="speech_recognition" pkg="media_xbmc_driver" type="gspeech_node.py"  output="screen" clear_params="true" >
+  </node-->
+
+  <!--node name="recognizer" pkg="pocketsphinx" type="recognizer.py" output="screen">
+    <param name="lm" value="$(find media_xbmc_driver)/res/french3g62K.lm.dmp"/>
+    <param name="dict" value="$(find media_xbmc_driver)/res/frenchWords62K.dic"/>
+    <param name="lm" value="$(find pocketsphinx)/demo/robocup.lm"/>
+    <param name="dict" value="$(find pocketsphinx)/demo/robocup.dic"/>
+  </node-->
+
+  <!-- TEXT to SPEECH -->
+  <node name="tts" pkg="alfred_tts_linux" type="tts_node.py"  output="screen" clear_params="true" >
+  </node>
+
+</launch>
+
