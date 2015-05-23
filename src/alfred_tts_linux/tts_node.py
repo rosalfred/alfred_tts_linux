@@ -79,9 +79,12 @@ class Say():
             if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
                 raise # re-raise exception if a different error occured
 
-if __name__ == '__main__':
+def run():
     rospy.init_node( NODE ) #, anonymous=True
     try:
         node = Say()
     except rospy.ROSInterruptException, e: 
         pass
+
+if __name__ == '__main__':
+    run()

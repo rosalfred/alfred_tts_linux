@@ -96,10 +96,9 @@ include_directories(
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-#install(PROGRAMS
-#  scripts/myscript
-#  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-#)
+install(PROGRAMS bin/alfred_tts_linux
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 ## Mark executables and/or libraries for installation
 # install(TARGETS media_xbmc_driver media_xbmc_driver_node
