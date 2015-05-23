@@ -18,7 +18,7 @@
   </node-->
 
   <!-- TEXT to SPEECH -->
-  <node name="tts" pkg="alfred_tts_linux" type="tts_node.py"  output="screen" clear_params="true" >
+  <node name="tts" pkg="alfred_tts_linux" type="alfred_tts_linux"  output="screen" clear_params="true" >
   </node>
 
 </launch>
