@@ -54,8 +54,6 @@
   <run_depend>media_msgs</run_depend>
   <run_depend>dynamic_reconfigure</run_depend>
   <run_depend>sound_play</run_depend>
-  <run_depend>sox</run_depend>
-  <!--run_depend>wget</run_depend-->
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
